@@ -1,0 +1,7 @@
+---
+- name: Ping all Linux servers
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Ping via Ansible
+      ping:
